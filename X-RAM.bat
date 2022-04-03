@@ -1,21 +1,22 @@
-@ECHO OFF
-Rem This Script written By CoderX - Andrei Abd 
-Rem █▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
-Rem █▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
-Rem mail      :  usr.g0a1@gmial.com
-Rem CoderX    :  https://andreiabd.github.io/CoderX/
-Rem Whatsapp  :  +963934820511
-Rem Pinterest :  https://www.pinterest.com/andreiabd93/
-Rem Instagram :  https://www.instagram.com/andrei_abd/
-Rem Linkeden  :  https://www.linkedin.com/in/andreiabd
-Rem Facebook  :  https://www.facebook.com/andreiaabd/
-Rem Github    :  https://github.com/AndreiAbd 
-cls
-Rem Run Bat As Adminstrator auto!
+@echo off
+color 02
+title X-RAM [ Andrei Abd - CoderX ]
+:: This Script written By CoderX - Andrei Abd 
+:: █▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+:: █▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+:: mail      :  usr.g0a1@gmial.com
+:: CoderX    :  https://andreiabd.github.io/CoderX/
+:: Whatsapp  :  +963934820511
+:: Pinterest :  https://www.pinterest.com/andreiabd93/
+:: Instagram :  https://www.instagram.com/andrei_abd/
+:: Linkeden  :  https://www.linkedin.com/in/andreiabd
+:: Facebook  :  https://www.facebook.com/andreiaabd/
+:: Github    :  https://github.com/AndreiAbd 
+:: Run Bat As Adminstrator auto!
 set "params=%*"
 cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
 
-Rem Delete All Cash Data!
+:: Delete All Cash Data!
 del /s /f /q %userprofile%\Recent\*.*
 
 del /s /f /q C:\Windows\Prefetch\*.*
